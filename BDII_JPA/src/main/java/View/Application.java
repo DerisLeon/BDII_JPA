@@ -35,10 +35,10 @@ public class Application {
        System.out.printf("Distância entre os estados da São Paulo e Ceará: %.2f km \n", distancia / 1000);
        
        //3
-       List<Estados> estadoss = estadosService.EstadosRegiao("Sul", "Santa Catarina");
-       System.out.println("Estados que sobrepõem o sul do Brasil: ");
-       for (Estados e: estadoss){
-            System.out.println(e);
+       List<Portos> portosss = portosService.PortosMunicipios("Pelotas");
+       System.out.println("Estado onde se encontra o porto de Pelotas: ");
+       for (Portos p: portosss){
+            System.out.println(p);
        }
       
        //4
@@ -54,12 +54,6 @@ public class Application {
        List<Portos> portos = portosService.listarPortosPara("Paraíba");
        System.out.println("Portos no Estado do Paraíba: ");
        for (Portos p: portos){
-            System.out.println(p);
-       } 
-       
-       List<Portos> portosss = portosService.PortosMunicipios("Pelotas");
-       System.out.println("Estado onde se encontra o porto de Pelotas: ");
-       for (Portos p: portosss){
             System.out.println(p);
        }
        
