@@ -30,18 +30,11 @@ public class Application {
             System.out.println(e);
        }
        
-        //2
+       //2
        double distancia = estadosService.distanciaEntreEstados("São Paulo", "Ceará");
        System.out.printf("Distância entre os estados da São Paulo e Ceará: %.2f km \n", distancia / 1000);
        
        //3
-       List<Portos> portosss = portosService.PortosMunicipios("Pelotas");
-       System.out.println("Estado onde se encontra o porto de Pelotas: ");
-       for (Portos p: portosss){
-            System.out.println(p);
-       }
-      
-       //4
        MunicipioService municipioService = new MunicipioService();
        List<Municipio> municipios = municipioService.listarMunicipiosVizinhos("Guarabira");
        System.out.println("Municipios vizinhos de Guarabira: ");
@@ -49,7 +42,7 @@ public class Application {
             System.out.println(m);
        }
        
-       //5
+       //4
        PortosService portosService = new PortosService();
        List<Portos> portos = portosService.listarPortosPara("Paraíba");
        System.out.println("Portos no Estado do Paraíba: ");
@@ -57,6 +50,13 @@ public class Application {
             System.out.println(p);
        }
        
+       //5
+       List<Portos> portosss = portosService.PortosMunicipios("Pelotas");
+       System.out.println("Estado onde se encontra o porto de Pelotas: ");
+       for (Portos p: portosss){
+            System.out.println(p);
+       }
+        
        //6
        List<Portos> portoss = portosService.PortosNordeste("Nordeste");
        System.out.println("Portos na região Nordeste: ");
