@@ -1,0 +1,16 @@
+model\RodoviaService.class
+View\Application.class
+model\EstadosService.class
+model\FerroviaService.class
+model\Ferrovia.class
+model\Portos.class
+model\Aeroporto.class
+model\MunicipioService.class
+model\Rodovia.class
+model\PortosService.class
+model\ArmazemService.class
+util\JPAUtil.class
+model\Armazem.class
+model\AeroportoService.class
+model\Municipio.class
+model\Estados.class
